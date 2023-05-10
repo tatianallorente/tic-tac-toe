@@ -62,3 +62,28 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+input:not(:checked) ~ svg.moon, input:checked ~ svg.sun {
+	display: none;
+}
+
+label svg {
+	position: absolute;
+	width: 18px;
+	top: 7px;
+	z-index: 100;
+	transition: 0.3s;
+}
+
+label svg.sun {
+	left: 7px;
+	fill: transparent;
+}
+
+label svg.moon {
+	right: 7px;
+	fill: var(--secondary-color);
+}
+label svg.sun path, label svg.moon path {
+	stroke: var(--secondary-color);
+}
