@@ -1,9 +1,9 @@
 import { useState } from "react";
 import confetti from "canvas-confetti";
 
-import { checkEndGame, checkWinner } from "./utils/board";
-import { TURNS } from "./utils/constants";
-import { resetGameStorage, saveGameToStorage } from "./utils/storage";
+import { checkEndGame, checkWinner } from "../utils/board";
+import { TURNS } from "../utils/constants";
+import { resetGameStorage, saveGameToStorage } from "../utils/storage";
 
 export function useBoard() {
   const [board, setBoard] = useState(

@@ -94,7 +94,7 @@ button:hover, a:hover {
   box-sizing: border-box;
   font-size: 70px;
   line-height: 70px;
-  font-family: cursive, sans-serif;
+  font-family: 'Permanent Marker', 'Architects Daughter', 'Comic Sans MS', sans-serif;
 }
 
 .board .square {

@@ -17,7 +17,7 @@ export const Theme = () => {
   }, [theme]);
 
   return (
-    <div className="toggleTheme">
+    <form className="toggleTheme">
       <label className="switch">
         <input
           type="checkbox"
@@ -63,6 +63,6 @@ export const Theme = () => {
           />
         </svg>
       </label>
-    </div>
+    </form>
   );
 };

@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 
-export const Square = ({ children, index, isSelected = false, changeTurn }) => {
+export const Square = ({ children, isSelected = false, changeTurn }) => {
   const classes = `square ${isSelected ? "isSelected" : ""}`;
 
-  const handleClick = (index) => {
-    changeTurn(index);
+  const handleClick = () => {
+    changeTurn();
   };
 
   return (
-    <div key={index} onClick={handleClick} className={classes}>
+    <div onClick={handleClick} className={classes}>
       {children}
     </div>
   );
@@ -16,7 +16,6 @@ export const Square = ({ children, index, isSelected = false, changeTurn }) => {
 
 Square.propTypes = {
   children: PropTypes.node,
-  index: PropTypes.string,
   isSelected: PropTypes.bool,
   changeTurn: PropTypes.func,
 };

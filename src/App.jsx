@@ -1,7 +1,7 @@
 import { Theme } from "./components/Theme";
 import { Board } from "./components/Board";
 import { Footer } from "./components/Footer";
-import { useBoard } from "./components/useBoard";
+import { useBoard } from "./components/hooks/useBoard";
 import { ResetButton } from "./components/ResetButton";
 import { Turns } from "./components/Turns";
 import { WinnerModal } from "./components/WinnerModal";
